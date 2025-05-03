@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найди клад</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #map {
+            position: relative;
+            width: 1010px;
+            height: 600px;
+            margin: 20px auto;
+            background-color: #f0e4c8;
+            border: 3px solid #8B4513;
+            background-image: url('treasured-map-mythical-island-landscape_153969-9825.jpg');
+            background-size: cover;
+            cursor: crosshair;
+        }
+        #hint {
+            margin: 15px auto;
+            font-size: 24px;
+            font-weight: bold;
+            color: #8B4513;
+            min-height: 30px;
+        }
+        #treasure {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            pointer-events: none;
+            z-index: 10;
+        }
+        #counter {
+            font-size: 18px;
+            color: #5a3921;
+        }
+    </style>
+</head>
+<body>
+    <h1>Найди клад!</h1>
+    <p>Кликни на карте, чтобы начать поиски</p>
+    <div id="counter">Попыток: 0</div>
+    
+    <div id="map"></div>
+    <div id="hint"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
