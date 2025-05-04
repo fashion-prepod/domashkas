@@ -1,0 +1,29 @@
+body {
+  background-color: #ccc;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+#map {
+  background: url('img/map.jpeg') no-repeat center;
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid #333;
+  cursor: crosshair;
+}
+#podskazki {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.treasure {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url('img/sunduk.jpeg') no-repeat center;
+  background-size: contain;
+  pointer-events: none;
+}
