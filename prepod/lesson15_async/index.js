@@ -313,7 +313,17 @@
 // TODO get post
 
 
-fetch('https://jsonplaceholder.typicode.com/posts')
+fetch('https://jsonplaceholder.typicode.com/posts',{
+    body: JSON.stringify({
+        title: 'foo',
+        body: 'bar',
+        userID: 1,
+    }),
+    method: 'POST',
+    headers: {
+        'Content-Type': 'text/html; charset=utf-8'
+    }
+})
 .then((data) => {
     return data.json();
 }).then((data) => {
